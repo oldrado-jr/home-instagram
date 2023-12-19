@@ -4,13 +4,27 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
+  height: 100vh;
   height: 100dvh;
   background: #fafafa;
 }
 
 body * {
   font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 #main-container {
@@ -26,12 +40,109 @@ body * {
 
 #banner-container {
   text-align: right;
+}
 
-  & img {
-    margin-right: -15px;
-  }
+#banner-container img {
+  margin-right: -15px;
 }
 
 #form-container {
   text-align: center;
+}
+
+#form-box {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  margin-top: 30px;
+}
+
+#logo-insta {
+  width: 175px;
+  height: 51px;
+  margin: 30px auto 12px;
+  background: #fff;
+}
+
+#login-form {
+  margin-top: 20px;
+}
+
+#login-form input {
+  display: block;
+  font-size: 1.2rem;
+  padding: 12px 9px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  width: 268px;
+  margin: 5px auto;
+}
+
+#login-form input[type="submit"] {
+  background: #b2dffc;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 30px;
+  border-color: #b2dffc;
+  font-size: 1.3rem;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator .line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+
+.separator span {
+  position: absolute;
+  text-transform: uppercase;
+  background: #fff;
+  color: #bbb;
+  width: 50px;
+  top: -6px;
+  left: 50%;
+  margin-left: -25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#facebook-login {
+  margin-bottom: 25px;
+}
+
+#facebook-login a {
+  color: #385185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#facebook-login img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+#facebook-login span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1px;
+}
+
+#forgot-pass {
+  margin-bottom: 20px;
+}
+
+#forgot-pass a {
+  font-size: 1.2rem;
+  color: #373799;
 }

@@ -197,7 +197,7 @@ footer {
   margin-top: 10px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 850px) {
   #banner-container {
     display: none;
   }

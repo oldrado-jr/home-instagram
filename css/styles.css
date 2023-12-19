@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #fafafa;
+  --border-color: #dbdbdb;
+  --form-submit-color: #b2dffc;
+  --form-bg-color: #fff;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
-  background: #fafafa;
+  background: var(--bg-color);
 }
 
 body * {
@@ -50,8 +57,8 @@ ul {
 
 #form-box,
 #register-container {
-  background: #fff;
-  border: 1px solid #dbdbdb;
+  background: var(--form-bg-color);
+  border: 1px solid var(--border-color);
   width: 350px;
   margin-top: 30px;
 }
@@ -60,7 +67,7 @@ ul {
   width: 175px;
   height: 51px;
   margin: 30px auto 12px;
-  background: #fff;
+  background: var(--form-bg-color);
 }
 
 #login-form {
@@ -70,20 +77,20 @@ ul {
 #login-form input {
   display: block;
   padding: 12px 9px;
-  background: #fafafa;
-  border: 1px solid #dbdbdb;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
   border-radius: 3px;
   width: 268px;
   margin: 5px auto;
 }
 
 #login-form input[type="submit"] {
-  background: #b2dffc;
-  color: #fff;
+  background: var(--form-submit-color);
+  color: var(--form-bg-color);
   margin-top: 15px;
   border-radius: 5px;
   height: 30px;
-  border-color: #b2dffc;
+  border-color: var(--form-submit-color);
   font-size: 1.3rem;
   padding: 0;
   font-weight: bold;
@@ -95,7 +102,7 @@ ul {
 }
 
 .separator .line {
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid var(--border-color);
   width: 268px;
   margin: 25px auto 35px;
 }
@@ -103,7 +110,7 @@ ul {
 .separator span {
   position: absolute;
   text-transform: uppercase;
-  background: #fff;
+  background: var(--form-bg-color);
   color: #bbb;
   width: 50px;
   top: -6px;
